@@ -1,7 +1,7 @@
 
 
 
-#PLAN
+PLAN
 
 1. Image preprocessing
     - Evaluate data from JPEG
