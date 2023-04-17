@@ -11,6 +11,7 @@ import numpy as np
 '''Turns a JPEG image into a square image and returns RGB matrix of image.
     Variables:
         filename - string - jpeg file name'''
+        
 def preprocessImage (filename):
     im = Image.open(filename)
     cropped = im.crop((100,100,100,100))
