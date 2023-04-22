@@ -6,25 +6,27 @@
 from PIL import Image
 import numpy as np
 
-
-
-'''Turns a JPEG image into a square image and returns RGB matrix of image.
-    Variables:
-        filename - string - jpeg file name'''
-        
-def preprocessImage (filename):
+'''Turns a JPEG image into an image with width = 400 px and height = 400 px unless otherwise specified
+inputs: 
+    filename - image file compatible with pillo
+    width(optional) - desired image array width
+    height(optional) - desired image array height
+returns:
+    matrix of RGB px values'''
+def preprocessImage (filename,width=400,height=400):
     im = Image.open(filename)
-    cropped = im.crop((100,100,100,100))
-    im = cropped
-    im.convert('RGB')
+    width = 400
+    height = 400
+    
+    if im.size[0] > width:
+        im = im.crop((((im.size[0]-width)/2),0,(im.size[0]-(im.size[0]-width)/2),im.size[1]))
+    if im.size[1] > height:
+        im = im.crop((0,((im.size[1]-height)/2),im.size[0],(im.size[1]-(im.size[1]-height)/2)))
     im_matrix = np.array(im)
+    print(im_matrix.size)
+    im.close()
     return im_matrix
     
-    
-
-
-
-
 
 #Random PILLOW commands
 #im.show()
