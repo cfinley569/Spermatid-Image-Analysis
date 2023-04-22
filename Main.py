@@ -5,17 +5,24 @@ Created on Mon Apr 17 18:07:59 2023
 @author: Cristian Finley
 """
 
-
 from ImagePreprocessing import *
 from DataManager import *
-from NetworkManager import *
 import tensorflow as tf
 import os
+import tkinter as tk
 
 
 def main ():
-    model = createModel()
-    saveModel(model)
+    window = tk.Tk()
+    greeting = tk.Label(text="Hello, Tkinter")
+    entry = tk.Entry()
+    greeting.pack()
+    entry.pack()
+    window.mainloop()
+    while entry.get()[-1] != '\n':
+        continue
+    print(entry.get())
+    print("test")
 
 
 
@@ -42,17 +49,8 @@ def loadModel():
 
 '''Saves the inputted model into the file "saveModel.txt", overwriting anything already there'''
 def saveModel(model):
-    #TODO : Actually check the file format of the model and how to save it lol
-    #TODO : add functionality for not overwriting file and adding in version number
-    checkpoint_path = 'savedModel/cp.ckpt'
-    checkpoint_dir = os.path.dirname(checkpoint_path)
-    cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,save_weights_only=True,
-                                                 verbose=1)
-    print(cp_callback)
-    model.save('savedModel')
-    #savefile = open('savedModel.txt', 'w')
-    #savefile.write(cp_callback)
-    #savefile.close()
+    #TODO : add functionality for not overwriting file and adding in version number or something
+    model.save('C:/Users/Cristian Finley/Documents/GitHub/Spermatid-Image-Analysis/savedModel')
     return
     
     
@@ -96,3 +94,12 @@ def test(model):
 
 
 main()
+
+
+
+######### code used to save a model in the middle of training ############
+# checkpoint_path = 'savedModel/cp.ckpt'
+# checkpoint_dir = os.path.dirname(checkpoint_path)
+# cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,save_weights_only=True,
+#                                              verbose=1)
+# print(cp_callback)
