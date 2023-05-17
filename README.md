@@ -3,9 +3,9 @@ The Spermatid Identification Model is a nueral network that can be used to predi
 
 ## How to install
 For advanced users who have the standard python library downloaded with a command terminal simply download this git repository and skip to the section "How to run and predict" to begin using the Spermatid Identification Model.  For unfamiliar users follow these step by step instructions:
-###1. install anaconda
+### 1. install anaconda
 In order to 
-###Download from Git
+### Download from Git
 ###
 
 ## How to run and predict
