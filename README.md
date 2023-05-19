@@ -11,10 +11,13 @@ From there open the Anaconda Prompt from the windows search bar.  This terminal 
 Once within the SIM folder begin a python prompt by typing python in the prompt, as shown below.  Once this is completed you should see `>>>` and this is where all commands for predicting on images or training will be entered.
 ```
 (base) C:\Users\CristianFinley\Downloads\Spermatid-Image-Analysis> python
->>>
+    >>>
 ```
 
 # Commands
+There are three main commands available to users:  `SIMpredict.py`, `SIMpredictbatch.py`, and `SIMtraining.py`.  Descriptions and examples of each of these commands will be show here.
+
+
 
 
 ## How to run and predict
