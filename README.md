@@ -5,7 +5,7 @@ The Spermatid Identification Model is a nueral network that can be used to predi
 In order to use the model, download this repository and open a terminal or virtual environment with access to the standard python library.  For users umfamiliar with this process, it is recommended to download anaconda which includes several tools but specifically the standard python library and an easy to use terminal.  In order to do this follow this [link](https://www.anaconda.com/download) and download the correct version for your operating system.
 
 From there open the Anaconda Prompt from the windows search bar.  This terminal will be the main interface for the model.  Once the terminal is opened navigate to the Spermatid-Image-Analysis folder (unzip the folder first) by typing the following command, replacing 'example path' with the path to the folder.
-```python
+```
 cd C:\Users\Download\Spermatid-Image-Analysis
 ```
 
