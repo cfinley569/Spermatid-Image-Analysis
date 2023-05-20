@@ -14,13 +14,9 @@ Once within the SIM folder begin a python prompt by typing python in the prompt,
     >>>
 ```
 
-# Commands
-There are three main commands available to users:  `SIMpredict.py`, `SIMpredictbatch.py`, and `SIMtraining.py`.  Descriptions and examples of each of these commands will be show here.
+## Commands
+There are three main commands available to users:  `SIMpredict.py`, `SIMpredictbatch.py`, and `SIMtraining.py`.  Descriptions and examples of each of these commands will be show here.  SIMpredict evaluates a single image, SIMpredictbatch evaluates a folder of images and returns a csv of the results, and SIMtraining allows for easy training of the model.  Each process has a description that can be seen by calling the command and `--help`
 
 
+### SIMpredict
 
-
-## How to run and predict
-
-
-## How to train on new data
