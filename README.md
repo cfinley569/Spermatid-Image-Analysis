@@ -30,10 +30,16 @@ Example 1(suggested model and weights):
 Example 2(alt model):
 ```
 (base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
-        >>> SIMpredict.py C:\Users\Cristian Finley\Downloads\image1 --altmodel ..\model2 --weights ..\model2weights
+        >>> SIMpredict.py C:\Users\Cristian Finley\Downloads\image1 --altmodel alternatemodels\model2 --weights alternatemodels\model2weights
 ```
 
 SIMpredict should be used to ensure that the model is working satisfactorily and to get acquinted with the output of the model.  Once familiar with the process proceed to SIMpredictbatch to predict on many images at once.
 
 #### SIMpredictbatch
-To use SIMpredictbatch, you first must create a folder with all of the images to be predicted on.  The images must be in jpg format and there cannot be any other files within the folder.  Once this is complete, run the file `SIMpredictbatch.py` followed by the path to the folder of images and the desired name of the output csv file.  Optional flags for using a different model and weights are available as `altmodel` and `weights`.
+To use SIMpredictbatch, you first must create a folder with all of the images to be predicted on.  The images must be in jpg format and there cannot be any other files within the folder.  Once this is complete, run the file `SIMpredictbatch.py` followed by the path to the folder of images and the desired name of the output csv file.   Optional flags for using a different model and weights are available as `--altmodel` and `--weights`.
+
+Example:
+```
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
+        >>> SIMpredictbatch.py C:\Users\Cristian Finley\Downloads\imagefolder resultsfile --altmodel \alternatemodels\model2 --weights alternatemodels\model2weights
+```
