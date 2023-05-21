@@ -19,4 +19,9 @@ There are three main commands available to users:  `SIMpredict.py`, `SIMpredictb
 
 
 #### SIMpredict
-To use SIMpredict type `SIMpredict.py` followed by the `imagepath` of the image you wish to predict on.  To use another nueral network or set of weights, the flags `--modelname` and `--weights` can be called with the corresponding path added after the call.
+To use SIMpredict type `SIMpredict.py` followed by the `imagepath` of the image you wish to predict on.  To use another nueral network or set of weights, the flags `--modelname` and `--weights` can be called with the corresponding path added after the call.  
+
+Example:
+```
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
+        >>> SIMpredict.py C:\Users\Cristian Finley\Downloads\image1
