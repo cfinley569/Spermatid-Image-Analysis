@@ -43,3 +43,19 @@ Example:
 (base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
         >>> SIMpredictbatch.py C:\Users\Cristian Finley\Downloads\imagefolder resultsfile --altmodel \alternatemodels\model2 --weights alternatemodels\model2weights
 ```
+
+#### SIMtraining
+To train the model on a different or more extensive set of data, the SIMtraining function is available for this purpose.  Training an image analysis model often requires a large data set so be careful of training with fewer than 100 datapoints per class.  To train, run the file `SIMtraining.py` in the python prompt.  Following this, input an integer value for the number of `epochs` or total times the model train over the data set and the desired name of the image file containing the results of the training.
+
+Optional flags allow for specification of the optimization function, loss function, model, and weights.
+
+The training uses images in the folders testing images and training images, so adding or removing images to these folders will affect training.  For more information regarding training options refer to Tensorflow documentation to determine the desired optimizer, loss function, etc.
+
+Example:
+```
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
+        >>> SIMtraining 10 resultsfile
+```
+
+
+The Spermatid Identification Model is a work in progress, please post issues, suggestions, or data contributions and I will try to respond as soon as possible.  
