@@ -1,4 +1,4 @@
-# Spermatid-Image-Analysis
+# Spermatid Image Analysis
 The Spermatid Identification Model is a nueral network that can be used to predict the step of spermatids that have been stained with DAPI to mark nucleic material.  Manually identifying these spermatids can be inaccurate, tedious, time-expensive and so developing a method of accurately performing this process can be very beneficial. The Spermatid Identification Model allows for this identification with realistic accuracy and consistency. The model specifically identifies spermatids in stages 8-15+.   Trained on TODO images, the model was tested on a data set of TODO images from each step and achieved an accuracy of TODO.  The model is a standard convolutional nueral network with 3 convolutional layers and 2 dense layers and takes in 800x800 color images in jpg format.  The model can take larger images, but it will simply resize to 800x800.  In order to download and use the model follow the instructions outlined in this overview.  
 
 ## How to use
