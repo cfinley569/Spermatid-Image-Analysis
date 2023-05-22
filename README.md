@@ -8,11 +8,7 @@ From there open the Anaconda Prompt from the windows search bar.  This terminal 
 ```
 (base) C:\Users\Cristian Finley> cd C:\Users\Downloads\Spermatid-Image-Analysis
 ```
-Once within the SIM folder begin a python prompt by typing python in the prompt, as shown below.  Once this is completed you should see `>>>` and this is where all commands for predicting on images or training will be entered.
-```
-(base) C:\Users\CristianFinley\Downloads\Spermatid-Image-Analysis> python
-    >>>
-```
+Once within the SIM folder you can begin running files according to the process needed.  These files are outlined in the commands section below.
 
 ## Commands
 There are three main commands available to users:  `SIMpredict.py`, `SIMpredictbatch.py`, and `SIMtraining.py`.  Descriptions and examples of each of these commands will be show here.  SIMpredict evaluates a single image, SIMpredictbatch evaluates a folder of images and returns a csv of the results, and SIMtraining allows for easy training of the model.  Each process has a description that can be seen by calling the command and `--help`
@@ -23,14 +19,12 @@ To use SIMpredict type `SIMpredict.py` followed by the `imagepath` of the image 
 
 Example 1(suggested model and weights):
 ```
-(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
-        >>> SIMpredict.py C:\Users\Cristian Finley\Downloads\image1
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python SIMpredict.py C:\Users\Cristian Finley\Downloads\image1
  ```
         
 Example 2(alt model):
 ```
-(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
-        >>> SIMpredict.py C:\Users\Cristian Finley\Downloads\image1 --altmodel alternatemodels\model2 --weights alternatemodels\model2weights
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python SIMpredict.py C:\Users\Cristian Finley\Downloads\image1 --altmodel alternatemodels\model2 --weights alternatemodels\model2weights
 ```
 
 SIMpredict should be used to ensure that the model is working satisfactorily and to get acquinted with the output of the model.  Once familiar with the process proceed to SIMpredictbatch to predict on many images at once.
@@ -40,8 +34,7 @@ To use SIMpredictbatch, you first must create a folder with all of the images to
 
 Example:
 ```
-(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
-        >>> SIMpredictbatch.py C:\Users\Cristian Finley\Downloads\imagefolder resultsfile --altmodel \alternatemodels\model2 --weights alternatemodels\model2weights
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python SIMpredictbatch.py C:\Users\Cristian Finley\Downloads\imagefolder resultsfile --altmodel \alternatemodels\model2 --weights alternatemodels\model2weights
 ```
 
 #### SIMtraining
@@ -53,8 +46,7 @@ The training uses images in the folders testing images and training images, so a
 
 Example:
 ```
-(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python
-        >>> SIMtraining 10 resultsfile
+(base) C:\Users\Cristian Finley\Documents\GitHub\Spermatid-Image-Analysis>  python SIMtraining 10 resultsfile
 ```
 
 
